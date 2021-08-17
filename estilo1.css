@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+
+body{
+    background: #563a;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    background: #563;
+}
+h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 0 10px #341;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+    .menu li{
+        list-style: none;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #fff;
+        background: #d3c300;
+        padding: 10px 60px;
+        border-radius: 7px;
+        margin: 10px 10px 30px;
+        font-size: 18px;
+        display: block;
+        transition: filter .3s, transform .3s;
+        text-shadow: 0 0 1px #341;
+        
+    }
+    .menu a:hover, .producto__boton:hover{
+        filter: saturate(1.7);
+        transform: scale(1.1);
+    }
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-auto-rows: minmax(300px, 400px);
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px 20px;
+    
+}
+    main .producto{
+        border-radius: 10px;
+        border: 2px solid #d3c300;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 58% repeat(3, 1fr);
+        background: transparent;
+        color: #fff;
+        text-shadow: 0 0 10px #341;
+    }
+    .producto div{
+        padding: 3px;
+        border-bottom: 2px solid #d3c300;
+    }
+    .producto__imagen{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .producto__titulo{
+        text-align: center;
+        margin: auto;
+    }
+    .producto__precio{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(191, 255, 191);
+    }
+    .producto__boton{
+        width: 60%;
+        justify-self: center;
+        background: #d3c300;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px 30px;
+        border-radius: 7px;
+        transition: filter .3s, transform .3s;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
