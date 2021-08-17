@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLO 1</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>COMIDA RÁPIDA</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="ejemplo1-1.html">Inicio</a></li>
+                    <li><a href="ejemplo1-2.html">Carrito (0)</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="tabla-general">
+                <div class="encabezado">
+                    <div>Imagen</div>
+                    <div>Producto</div>
+                    <div>Precio</div>
+                    <div>Cantidad</div>
+                    <div>Total</div>
+                    <div>Eliminar</div>
+                </div>
+                <div class="aviso">
+                    NO HAY PRODUCTOS EN EL CARRITO
+                </div>
+                <div class="fila">
+                    <div class="general__imagen"><img src="img/salchipapa.jpg" alt=""></div>
+                    <div class="general__producto">Salchipapa Clásica</div>
+                    <div class="general__precio">S/ 9.90</div>
+                    <div class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></div>
+                    <div class="general__total">S/ 9.90</div>
+                    <div class="general__eliminar"><a href="#">X</a></div>
+                </div>
+                <div class="fila">
+                    <div class="general__imagen"><img src="img/limonada.jpg" alt=""></div>
+                    <div class="general__producto">Limonada Frozen 1lt</div>
+                    <div class="general__precio">S/ 9.90</div>
+                    <div class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></div>
+                    <div class="general__total">S/ 9.90</div>
+                    <div class="general__eliminar"><a href="#">X</a></div>
+                </div>
+                <div class="fila">
+                    <div class="general__imagen"><img src="img/limonada.jpg" alt=""></div>
+                    <div class="general__producto">Limonada Frozen 1lt</div>
+                    <div class="general__precio">S/ 9.90</div>
+                    <div class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></div>
+                    <div class="general__total">S/ 9.90</div>
+                    <div class="general__eliminar"><a href="#">X</a></div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="tabla-resumen">
+                <div class="encabezado">Resumen de compra</div>
+                
+                <div class="fila resumen__descripcion">Subtotal</div>
+                <div class="fila resumen__subtotal">S/ 0.00</div>
+
+                <div class="fila resumen__descripcion">Descuento</div>
+                <div class="fila resumen__descuento">S/ 0.00</div>
+
+                <div class="fila resumen__descripcion">Total</div>
+                <div class="fila resumen__total">S/ 0.00</div>
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

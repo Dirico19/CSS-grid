@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+}
+
+body {
+  background: #563a;
+}
+
+.contenedor {
+  width: 80%;
+  margin: auto;
+  background: #563;
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  width: 100%;
+}
+h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0 0 10px #341;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  background: #d3c300;
+  padding: 10px 60px;
+  border-radius: 7px;
+  margin: 10px 10px 30px;
+  font-size: 18px;
+  display: block;
+  transition: filter 0.3s, transform 0.3s;
+  text-shadow: 0 0 1px #341;
+}
+.menu a:hover {
+  filter: saturate(1.7);
+  transform: scale(1.1);
+}
+
+main {
+  width: 60%;
+  padding: 0 30px 30px;
+}
+.tabla-general {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-auto-rows: 60px;
+  color: #fff;
+  background: #d3c300;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.tabla-general .aviso {
+  grid-column: 1 / 7;
+  justify-self: center;
+}
+.tabla-general .encabezado {
+  display: contents;
+}
+.tabla-general .encabezado div {
+  font-weight: bold;
+  text-shadow: 0 0 10px #341;
+  align-self: flex-start;
+  background: #aa0;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #770;
+}
+.tabla-general .encabezado div:first-child {
+  border-top-left-radius: 5px;
+}
+.tabla-general .encabezado div:last-child {
+  border-top-right-radius: 5px;
+}
+
+.tabla-general .fila {
+  display: contents;
+}
+.tabla-general .fila div {
+  text-align: center;
+}
+.general__cantidad input {
+  width: 70%;
+  background: #d3c300;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 5px;
+}
+.general__eliminar a {
+  background: #563;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tabla-general div {
+  padding: 10px;
+}
+aside {
+  width: 30%;
+}
+
+.general__imagen {
+  align-self: stretch;
+}
+img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
