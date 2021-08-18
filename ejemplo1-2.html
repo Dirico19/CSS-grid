@@ -24,57 +24,67 @@
             </nav>
         </header>
         <main>
-            <section class="tabla-general">
-                <div class="encabezado">
-                    <div>Imagen</div>
-                    <div>Producto</div>
-                    <div>Precio</div>
-                    <div>Cantidad</div>
-                    <div>Total</div>
-                    <div>Eliminar</div>
-                </div>
-                <div class="aviso">
-                    NO HAY PRODUCTOS EN EL CARRITO
-                </div>
-                <div class="fila">
-                    <div class="general__imagen"><img src="img/salchipapa.jpg" alt=""></div>
-                    <div class="general__producto">Salchipapa Clásica</div>
-                    <div class="general__precio">S/ 9.90</div>
-                    <div class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></div>
-                    <div class="general__total">S/ 9.90</div>
-                    <div class="general__eliminar"><a href="#">X</a></div>
-                </div>
-                <div class="fila">
-                    <div class="general__imagen"><img src="img/limonada.jpg" alt=""></div>
-                    <div class="general__producto">Limonada Frozen 1lt</div>
-                    <div class="general__precio">S/ 9.90</div>
-                    <div class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></div>
-                    <div class="general__total">S/ 9.90</div>
-                    <div class="general__eliminar"><a href="#">X</a></div>
-                </div>
-                <div class="fila">
-                    <div class="general__imagen"><img src="img/limonada.jpg" alt=""></div>
-                    <div class="general__producto">Limonada Frozen 1lt</div>
-                    <div class="general__precio">S/ 9.90</div>
-                    <div class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></div>
-                    <div class="general__total">S/ 9.90</div>
-                    <div class="general__eliminar"><a href="#">X</a></div>
-                </div>
-            </section>
+            <table class="tabla-general">
+                <thead>
+                    <tr class="encabezados">
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fila">
+                        <td class="general__imagen"><img src="img/salchipapa.jpg" alt=""></td>
+                        <td class="general__producto">Salchipapa Clásica</td>
+                        <td class="general__precio">S/ 9.90</td>
+                        <td class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></td>
+                        <td class="general__total">S/ 9999.90</td>
+                        <td class="general__eliminar"><a href="#">X</a></td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="general__imagen"><img src="img/hamburguesa.jpg" alt=""></td>
+                        <td class="general__producto">Hamburguesa Clásica</td>
+                        <td class="general__precio">S/ 8.90</td>
+                        <td class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></td>
+                        <td class="general__total">S/ 8.90</td>
+                        <td class="general__eliminar"><a href="#">X</a></td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="general__imagen"><img src="img/limonada.jpg" alt=""></td>
+                        <td class="general__producto">Limonada Frozen 1lt</td>
+                        <td class="general__precio">S/ 14.90</td>
+                        <td class="general__cantidad"><input type="number" name="" id="" value="1" min="1"></td>
+                        <td class="general__total">S/ 14.90</td>
+                        <td class="general__eliminar"><a href="#">X</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <aside>
-            <section class="tabla-resumen">
-                <div class="encabezado">Resumen de compra</div>
-                
-                <div class="fila resumen__descripcion">Subtotal</div>
-                <div class="fila resumen__subtotal">S/ 0.00</div>
-
-                <div class="fila resumen__descripcion">Descuento</div>
-                <div class="fila resumen__descuento">S/ 0.00</div>
-
-                <div class="fila resumen__descripcion">Total</div>
-                <div class="fila resumen__total">S/ 0.00</div>
-            </section>
+            <table class="tabla-resumen">
+                <thead>
+                    <tr class="encabezados">
+                        <th colspan="2">Resumen de compra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fila">
+                        <td class="descripcion">Subtotal</td>
+                        <td class="resumen__subtotal">S/ 2500.00</td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="descripcion">Descuento</td>
+                        <td class="resumen__descuento">S/ 500.00</td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="descripcion">Total</td>
+                        <td class="resumen__total">S/ 2000.00</td>
+                    </tr>
+                </tbody>
+            </table>
         </aside>
     </div>
 </body>

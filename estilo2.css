@@ -11,13 +11,20 @@ body {
 
 .contenedor {
   width: 80%;
-  margin: auto;
-  background: #563;
+  margin: 10px auto;
+  background: #785;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px 3px #120;
+  height: 100vh;
 }
 header {
   width: 100%;
+  background: #563;
+  padding-top: 10px;
+  margin-bottom: 40px;
 }
 h1 {
   font-size: 50px;
@@ -52,48 +59,53 @@ h1 {
 
 main {
   width: 60%;
-  padding: 0 30px 30px;
+  margin-bottom: 40px;
 }
-.tabla-general {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px;
-  grid-auto-rows: 60px;
+.tabla-general,
+.tabla-resumen {
+  width: 100%;
   color: #fff;
-  background: #d3c300;
   border-radius: 5px;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px #120;
 }
-.tabla-general .aviso {
-  grid-column: 1 / 7;
-  justify-self: center;
+
+.encabezados th {
+  background: #341;
+  padding: 20px 10px;
 }
-.tabla-general .encabezado {
-  display: contents;
-}
-.tabla-general .encabezado div {
-  font-weight: bold;
-  text-shadow: 0 0 10px #341;
-  align-self: flex-start;
-  background: #aa0;
-  padding: 15px 0;
-  text-align: center;
-  border-bottom: 1px solid #770;
-}
-.tabla-general .encabezado div:first-child {
+.encabezados th:first-child {
   border-top-left-radius: 5px;
 }
-.tabla-general .encabezado div:last-child {
+.encabezados th:last-child {
   border-top-right-radius: 5px;
 }
 
-.tabla-general .fila {
-  display: contents;
-}
-.tabla-general .fila div {
+td {
+  height: 60px;
   text-align: center;
+  background: #d3c300;
+}
+table .fila:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+table .fila:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.general__imagen {
+  padding: 10px 0;
+}
+
+img {
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.general__cantidad {
+  width: 50px;
 }
 .general__cantidad input {
   width: 70%;
@@ -112,19 +124,91 @@ main {
   font-size: 12px;
   font-weight: bold;
 }
-.tabla-general div {
-  padding: 10px;
-}
+
 aside {
-  width: 30%;
+  width: 20%;
+  margin-bottom: 40px;
+}
+.descripcion {
+  font-weight: bold;
+  padding-left: 20px;
+}
+.tabla-resumen td {
+  text-align: left;
 }
 
-.general__imagen {
-  align-self: stretch;
+@media screen and (max-width: 1200px) {
+  main {
+    width: 80%;
+  }
+  aside {
+    width: 50%;
+  }
 }
-img {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
+
+@media screen and (max-width: 900px) {
+  .contenedor {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  main,
+  aside {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 35px;
+    padding: 5px 0;
+  }
+  .menu a {
+    padding: 10px 30px;
+    margin: 5px 5px 15px;
+    font-size: 14px;
+  }
+  main,
+  aside {
+    font-size: 12px;
+  }
+  main {
+    width: 90%;
+  }
+  aside {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  h1 {
+    font-size: 24px;
+  }
+  .menu a {
+    padding: 8px 22px;
+    font-size: 10px;
+  }
+  main,
+  aside {
+    font-size: 8px;
+  }
+  td {
+    height: 40px;
+  }
+  .encabezados th {
+    padding: 10px;
+  }
+  .general__cantidad input {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 8px;
+  }
+  .general__eliminar a {
+    padding: 5px 7px;
+    font-size: 8px;
+  }
 }
